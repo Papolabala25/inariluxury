@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>INARI LUXURY — AI Concierge | Los Cabos & Global</title>
+<meta name="description" content="Concierge premium con IA. Acceso curado a experiencias no públicas. Por pre-aprobación para HNWIs.">
+
+<style>
+/* INARI-BUILD: inari-pro-v1 (matte-champagne) */
+:root{
+  --bg:#0B0B0B; --fg:#F2F2F2;
+  --gold:#C4B27A;          /* champagne mate (no amarillo) */
+  --gold-strong:#A69158;   /* acento */
+  --muted:rgba(255,255,255,.75);
+}
+*{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial}
+a{color:inherit}
+.wrap{max-width:1180px;margin:auto;padding:18px}
+header{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.brand{display:flex;align-items:center;gap:10px}
+.brand svg{width:34px;height:34px}
+.brand b{letter-spacing:.08em;color:var(--gold)}
+nav a{margin-left:16px;text-decoration:none;opacity:.9}
+nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(196,178,122,.7)}
+
+.hero{position:relative;min-height:86vh;display:flex;align-items:center;border-radius:18px;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42;filter:saturate(.60) hue-rotate(-8deg) brightness(.92)}
+.hero::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(ellipse at 60% 40%, rgba(0,0,0,.22), rgba(0,0,0,.62) 60%),
+  linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,.68));mix-blend-mode:multiply}
+.content{position:relative;z-index:2;padding:32px}
+.badge{display:inline-block;border:1px solid var(--gold-strong);color:var(--gold-strong);padding:6px 12px;border-radius:999px;font-size:12px;background:rgba(0,0,0,.35)}
+h1{font-size:44px;line-height:1.1;margin:16px 0 12px;text-shadow:0 4px 18px rgba(0,0,0,.4)}
+.lead{max-width:780px;opacity:.9}
+.cta{display:inline-block;margin-top:18px;margin-right:10px;padding:12px 18px;border-radius:14px;font-weight:700;text-decoration:none}
+.primary{background:var(--gold-strong);color:#0B0B0B}
+.outline{border:1px solid rgba(255,255,255,.25);color:#fff}
+
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:38px 0}
+.card{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);border-radius:16px;padding:18px}
+section h2{font-size:26px;margin:10px 0 8px}
+.muted{opacity:.8;font-size:14px}
+
+.wa{position:fixed;right:20px;bottom:20px;background:#25D366;color:#000;padding:12px 16px;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.4);z-index:5}
+footer{border-top:1px solid rgba(255,255,255,.12);padding:22px 0;opacity:.75;margin-top:26px}
+
+/* Tarjetas con imagen */
+.tile{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:#111}
+.tile img{width:100%;height:160px;object-fit:cover;display:block;filter:saturate(.7) contrast(1.05)}
+.tile b{display:block;padding:12px}
+</style>
+</head>
+<body>
+
+<a class="wa" id="waBtn" target="_blank" href="#">WhatsApp</a>
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <!-- Logo SVG minimal (zorro geométrico) -->
+      <svg viewBox="0 0 64 64" aria-hidden="true" fill="none">
+        <circle cx="32" cy="32" r="30" stroke="url(#g)" stroke-width="2"/>
+        <path d="M20 36c4-8 12-8 16 0 4-6 10-6 12 0-2 6-10 10-20 10S18 42 20 36Z" stroke="url(#g)" stroke-width="2"/>
+        <path d="M24 28l8-8 8 8" stroke="url(#g)" stroke-width="2"/>
+        <defs><linearGradient id="g" x1="0" y1="0" x2="64" y2="64"><stop stop-color="#C4B27A"/><stop offset="1" stop-color="#A69158"/></linearGradient></defs>
+      </svg>
+      <b>INARI LUXURY</b>
+    </div>
+    <nav>
+      <a href="#es" onclick="switchLang('es')">ES</a>
+      <a href="#en" onclick="switchLang('en')">EN</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <video autoplay muted playsinline loop>
+      <source src="https://cdn.coverr.co/videos/coverr-luxury-yacht-ride-8946/1080p.mp4" type="video/mp4"/>
+    </video>
+    <div class="content">
+      <!-- ES -->
+      <div id="esBlock">
+        <span class="badge">Solo con pre-aprobación</span>
+        <h1>Concierge premium con IA — Acceso por pre-aprobación</h1>
+        <p class="lead">Acceso curado a experiencias no públicas con socios verificados. Diseñado para HNWIs en Los Cabos y destinos globales. Discreción, seguridad y operación by-appointment.</p>
+        <a class="cta primary" href="#elig">Solicitar revisión de elegibilidad</a>
+        <a class="cta outline" href="#concierge">Concierge IA</a>
+        <div class="grid" style="margin-top:22px">
+          <div class="card"><b>Admisión selectiva</b><br/><span class="muted">Capacidad y fit con estándar INARI.</span></div>
+          <div class="card"><b>Socios verificados</b><br/><span class="muted">Ecosistema curado, no público.</span></div>
+          <div class="card"><b>Discreción total</b><br/><span class="muted">Privacidad y seguridad reforzada.</span></div>
+        </div>
+      </div>
+      <!-- EN -->
+      <div id="enBlock" style="display:none">
+        <span class="badge">By-approval only</span>
+        <h1>AI-Enabled Premium Concierge — Admission by Pre-Approval</h1>
+        <p class="lead">Trusted access to non-public experiences with vetted partners. Built for eligible HNWIs in Los Cabos and worldwide. Discretion, security, and by-appointment operations.</p>
+        <a class="cta primary" href="#elig">Apply for Eligibility</a>
+        <a class="cta outline" href="#concierge">AI Concierge</a>
+        <div class="grid" style="margin-top:22px">
+          <div class="card"><b>Selective admission</b><br/><span class="muted">Capability & fit with INARI standards.</span></div>
+          <div class="card"><b>Verified partners</b><br/><span class="muted">Curated, non-public ecosystem.</span></div>
+          <div class="card"><b>Total discretion</b><br/><span class="muted">Privacy & reinforced security.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIAS FIRMA -->
+  <section id="experiences">
+    <h2 id="expTitle">Experiencias firma</h2>
+    <div class="grid">
+      <div class="tile">
+        <img src="https://images.unsplash.com/photo-1516239322140-cc3f8e62d4e0?auto=format&fit=crop&w=1600&q=80" alt="Yate privado">
+        <b id="t1">Yate privado — Cabo</b>
+      </div>
+      <div class="tile">
+        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=1600&q=80" alt="Helicóptero a playa secreta">
+        <b id="t2">Helicóptero a playa secreta</b>
+      </div>
+      <div class="tile">
+        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1600&q=80" alt="Table privée Michelin">
+        <b id="t3">Table privée Michelin</b>
+      </div>
+      <div class="tile">
+        <img src="https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=1600&q=80" alt="Villas ultra-lujo">
+        <b id="t4">Villas ultra-lujo</b>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCIERGE IA -->
+  <section id="concierge">
+    <h2 id="howTitle">Cómo funciona el Concierge IA</h2>
+    <div class="grid">
+      <div class="card"><b id="s1">1) Elegibilidad</b><br/><span class="muted" id="sd1">Verificación rápida (perfil HNWI y propósito).</span></div>
+      <div class="card"><b id="s2">2) Curaduría</b><br/><span class="muted" id="sd2">Motor IA propone rutas y reservas seguras.</span></div>
+      <div class="card"><b id="s3">3) Operación</b><br/><span class="muted" id="sd3">Agenda por cita, seguimiento y WhatsApp 1:1.</span></div>
+    </div>
+  </section>
+
+  <!-- ELEGIBILIDAD -->
+  <section id="elig" class="card">
+    <h2 id="eligTitle">Elegibilidad (rápido)</h2>
+    <form onsubmit="sendToWhatsApp(event)">
+      <div style="display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
+        <input id="name" required placeholder="Nombre / Name" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff"/>
+        <input id="email" required type="email" placeholder="Email" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff"/>
+        <input id="nat" required placeholder="Nacionalidad / Nationality" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff"/>
+      </div>
+      <button class="cta primary" style="margin-top:12px" id="eligBtn">Enviar y abrir WhatsApp</button>
+      <p class="muted" style="margin-top:8px" id="note">* Confirmamos identidad y capacidad antes de compartir itinerarios.</p>
+    </form>
+  </section>
+
+  <footer>
+    © INARI LUXURY — By-appointment only. Operación privada, sujeta a pre-aprobación.
+  </footer>
+</div>
+
+<script>
+const whatsappNumber = "526121171197"; // tu número profesional
+function switchLang(lang){
+  const es = document.getElementById('esBlock'), en = document.getElementById('enBlock');
+  const txt = {
+    es: {
+      expTitle:"Experiencias firma", howTitle:"Cómo funciona el Concierge IA",
+      eligTitle:"Elegibilidad (rápido)", eligBtn:"Enviar y abrir WhatsApp",
+      note:"* Confirmamos identidad y capacidad antes de compartir itinerarios.",
+      t1:"Yate privado — Cabo", t2:"Helicóptero a playa secreta", t3:"Table privée Michelin", t4:"Villas ultra-lujo",
+      s1:"1) Elegibilidad", sd1:"Verificación rápida (perfil HNWI y propósito).",
+      s2:"2) Curaduría", sd2:"Motor IA propone rutas y reservas seguras.",
+      s3:"3) Operación", sd3:"Agenda por cita, seguimiento y WhatsApp 1:1.",
+      wa:"Hola Inari. He enviado mi solicitud de elegibilidad y deseo coordinar una llamada privada."
+    },
+    en: {
+      expTitle:"Signature Experiences", howTitle:"How the AI Concierge works",
+      eligTitle:"Eligibility (quick)", eligBtn:"Send & Open WhatsApp",
+      note:"* We verify identity & capability before sharing itineraries.",
+      t1:"Private Yacht — Cabo", t2:"Helicopter to Secret Beach", t3:"Michelin Table Privée", t4:"Ultra-Luxury Villas",
+      s1:"1) Eligibility", sd1:"Quick verification (HNWI profile & purpose).",
+      s2:"2) Curation", sd2:"AI engine proposes secure routes & bookings.",
+      s3:"3) Operations", sd3:"By-appointment, follow-up & 1:1 WhatsApp.",
+      wa:"Hello Inari. I submitted my eligibility and would like a private call."
+    }
+  };
+  es.style.display = (lang==='es')?'block':'none';
+  en.style.display = (lang==='en')?'block':'none';
+  const m = txt[lang];
+  const ids = ["expTitle","howTitle","eligTitle","eligBtn","note","t1","t2","t3","t4","s1","sd1","s2","sd2","s3","sd3"];
+  ids.forEach(id=>{ const el=document.getElementById(id); if(el) el.textContent=m[id]; });
+  const msg = encodeURIComponent(m.wa);
+  document.getElementById('waBtn').href = `https://wa.me/${whatsappNumber}?text=${msg}`;
+}
+switchLang('es');
+
+function sendToWhatsApp(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const nat = document.getElementById('nat').value.trim();
+  const msg = encodeURIComponent(
+    `Solicitud de elegibilidad INARI:\nNombre: ${name}\nEmail: ${email}\nNacionalidad: ${nat}\nDeseo una llamada privada.`
+  );
+  window.open(`https://wa.me/${whatsappNumber}?text=${msg}`, '_blank');
+}
+</script>
+</body>
+</html>
